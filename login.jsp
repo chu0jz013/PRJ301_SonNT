@@ -5,6 +5,7 @@
     <head>
         <title>Login Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <---<!-- https://completejavascript.com/ma-mau-logo-cac-thuong-hieu-noi-tieng/ -->
         <style>
             body {
                 background-color: #e2e2e2;
@@ -23,7 +24,7 @@
                 text-align: center;
             }
             h2 {
-                color: #FFA500;
+                color: #F37022;
                 font-size: 30px;
                 font-weight: 700;
                 margin-bottom: 20px;
@@ -59,35 +60,17 @@
             input[type=submit]:hover {
                 background-color: #ff6600;
             }
-            .error {
-                color: red;
-                margin-bottom: 10px;
-                text-align: left;
-                font-size: 14px;
-                font-weight: 600;
-                text-align: center;
-            }
-            .success {
-                color: green;
-                margin-bottom: 10px;
-                text-align: left;
-                font-size: 14px;
-                font-weight: 600;
-                text-align: center;
+            body {
+                background-image: url(https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/193298293_4801503649879198_1620876261886574796_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=hUI91SE34noAX8mUmpu&_nc_ht=scontent.fhan15-2.fna&oh=00_AfBOiclQv1dSJm1uhHyz-lGsJIMYYmV9v5JSziCctV0PNg&oe=6408E758);
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <img width="300px" src="https://upload.wikimedia.org/wikipedia/vi/1/1d/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.png" alt="FPT University logo">
+            <img width="320px" src="https://upload.wikimedia.org/wikipedia/vi/1/1d/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.png" alt="FPT University logo">
             <h2>FPT University Academic Portal</h2>
-            <%-- Display error/success message --%>
-            <c:if test="${not empty errorMessage}">
-                <p class="error">${errorMessage}</p>
-            </c:if>
-            <c:if test="${not empty successMessage}">
-                <p class="success">${successMessage}</p>
-            </c:if>
             <form action="login" method="post">
                 <input type="text" id="username" name="username" placeholder="Username" required><br>
 
@@ -95,8 +78,6 @@
 
                 <input type="submit" value="LOGIN">
             </form>
-            <p>Power by <a href="https://www.facebook.com/namhaikieuu/">Nam Hai Kieu</a></p>
-        </div>
-
+            <p> © Powered by <a href="https://www.facebook.com/namhaikieuu/">Nam Hai Kieu </a>
     </body>
 </html>
